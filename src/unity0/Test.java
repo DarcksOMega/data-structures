@@ -45,5 +45,9 @@ public class Test {
         System.out.print(" Initial value: ");
         q.print();
 
+        int d= q.remove();
+        System.out.println(" The element remove was: "+d);
+        System.out.print(" Valores Actuales ");
+        q.print();
     }
 }
