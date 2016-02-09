@@ -8,6 +8,14 @@ public class Test {
     
     public static void main (String [] args){
         
+        TestingStacks();
+        TestingQueue();
+        
+    }
+    
+    public static void TestingStacks(){
+    
+        System.out.println(" Stack Testing ");
         Stack s = new Stack();
         s.add( 10 );
         s.add( 20 );
@@ -25,7 +33,17 @@ public class Test {
         }
         
         s.print(); //Se imprimiran los elementos adicionales
-        
     }
     
+    public static void TestingQueue(){
+        
+        System.out.println(" Queue Testing ");
+        Queue q= new Queue();
+        for (int i=1; i<= 20; i++){
+            q.add(i);
+        }
+        System.out.print(" Initial value: ");
+        q.print();
+        
+    }
 }
