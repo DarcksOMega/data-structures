@@ -2,7 +2,7 @@ package unity0;
 
 /**
  *
- * @author DarcksOMega
+ * @author Darcks OMega
  */
 public class Stack {
     private int[] data; 
