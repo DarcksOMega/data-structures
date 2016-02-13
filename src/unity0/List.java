@@ -6,12 +6,13 @@ package unity0;
  */
 public class List {
     
-    private int[] data;
+    private int data[];
     private int top;
     
     public void List(){
         
-        
+        data new int[100];
+        top= 0;
         
     }
     
