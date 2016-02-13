@@ -23,14 +23,18 @@ public class List {
 
     }
 
-    public int remove() {
+    public int remove( int p) {
 
+        
+        
         return 0;
 
     }
 
     public void print() {
 
+        System.out.println();
+        
     }
 
 }
