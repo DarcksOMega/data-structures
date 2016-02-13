@@ -25,7 +25,7 @@ public class List {
 
     public int remove( int p) {
 
-        int [d] = data [p];
+        int d = data [p];
         
         return 0;
 
