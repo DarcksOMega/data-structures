@@ -40,7 +40,9 @@ public class List {
 
         for (int i=0; i < top; i++){
             
+            System.out.print(" " + data [i]);
             
+            System.out.println();
             
         }
         
