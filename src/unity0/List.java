@@ -18,11 +18,13 @@ public class List {
     
     public void add (int d){
         
-        
+        data[d] = d;
+        top++;
         
     }
     
     public int remove(){
+        
         
         return 0;
         
