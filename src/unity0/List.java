@@ -26,17 +26,23 @@ public class List {
     public int remove( int p) {
 
         int d = data [p];
-        for(){
+        for(int i= p; i < top; i++){
+            
+            data[1] = data[i +1];
             
         }
-        
-        return 0;
+        top--;
+        return data[d];
 
     }
 
     public void print() {
 
-        System.out.println();
+        for (int i=0; i < top; i++){
+            
+            
+            
+        }
         
     }
 
