@@ -50,4 +50,28 @@ public class Test {
         System.out.print(" Valores Actuales ");
         q.print();
     }
+    
+    public static void printlist(){
+        
+        List L = new List();
+        
+        L.add(2, 0);
+        L.add(3, 1);
+        L.add(1, 2);
+        L.add(13, 3);
+        L.add(12, 4);
+        L.add(20,5);
+        L.add(15, 6);
+        L.add(21, 7);
+        L.add(30, 8);
+        L.add(25, 9);
+        L.add(35, 10);
+        
+        System.out.println(" Element initial:  ");
+        L.print();
+        
+        
+        
+    }
+    
 }

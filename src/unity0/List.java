@@ -23,13 +23,13 @@ public class List {
 
     }
 
-    public int remove( int p) {
+    public int remove(int p) {
 
-        int d = data [p];
-        for(int i= p; i < top; i++){
-            
-            data[1] = data[i +1];
-            
+        int d = data[p];
+        for (int i = p; i < top; i++) {
+
+            data[1] = data[i + 1];
+
         }
         top--;
         return data[d];
@@ -38,14 +38,14 @@ public class List {
 
     public void print() {
 
-        for (int i=0; i < top; i++){
-            
-            System.out.print(" " + data [i]);
-            
+        for (int i = 0; i < top; i++) {
+
+            System.out.print(" " + data[i]);
+
             System.out.println();
-            
+
         }
-        
+
     }
 
 }
