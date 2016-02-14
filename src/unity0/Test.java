@@ -53,11 +53,11 @@ public class Test {
         q.print();
     }
     
-    public static void PrintList(){
+    public static void PrintList(){ //Imprimir Lista
         
         List  L = new List();
         
-            L.add(1,0);
+            L.add(1,0); //Añadir números y posiciones
             L.add(4,1);
             L.add(3,2);
             L.add(10,3);
@@ -65,9 +65,9 @@ public class Test {
             L.add(30,5);
             
                 
-            System.out.println("Initial element: ");
+            System.out.println("Initial element: "); //Imprimir elementos iniciales
         
-            L.print();
+            L.print(); //Imprimir los elementos que se han añadido
         
         
         
