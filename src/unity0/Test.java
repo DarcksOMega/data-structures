@@ -4,12 +4,14 @@ package unity0;
  *
  * @author Darcks OMega
  */
+
 public class Test {
 
     public static void main(String[] args) {
 
         TestingStacks();
         TestingQueue();
+        PrintList();
 
     }
 
@@ -51,24 +53,21 @@ public class Test {
         q.print();
     }
     
-    public static void printlist(){
+    public static void PrintList(){
         
-        List L = new List();
+        List  L = new List();
         
-        L.add(2, 0);
-        L.add(3, 1);
-        L.add(1, 2);
-        L.add(13, 3);
-        L.add(12, 4);
-        L.add(20,5);
-        L.add(15, 6);
-        L.add(21, 7);
-        L.add(30, 8);
-        L.add(25, 9);
-        L.add(35, 10);
+            L.add(1,0);
+            L.add(4,1);
+            L.add(3,2);
+            L.add(10,3);
+            L.add(5,4);
+            L.add(30,5);
+            
+                
+            System.out.println("Initial element: ");
         
-        System.out.println(" Element initial:  ");
-        L.print();
+            L.print();
         
         
         

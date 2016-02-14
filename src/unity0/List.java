@@ -9,7 +9,7 @@ public class List {
     private int data[];
     private int top;
 
-    public void List() {
+    public List() {
 
         data = new int[100];
         top = 0;
@@ -26,11 +26,13 @@ public class List {
     public int remove(int p) {
 
         int d = data[p];
+        
         for (int i = p; i < top; i++) {
 
-            data[1] = data[i + 1];
+            data[i] = data[i + 1];
 
         }
+        
         top--;
         return data[d];
 
@@ -38,13 +40,13 @@ public class List {
 
     public void print() {
 
-        for (int i = 0; i < top; i++) {
+        for (int i = 0; i < top-1; i++) {
 
             System.out.print(" " + data[i]);
 
-            System.out.println();
-
         }
+        
+        System.out.println();
 
     }
 
