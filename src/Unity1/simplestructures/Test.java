@@ -19,6 +19,12 @@ public class Test {
         
         int c = L.count();
         System.out.println("Total nodes:  " + c );
+        
+        System.out.print(" The Firts element is: ");
+        L.PrintFirstElement();
+        
+        System.out.println(" The Last Element is: ");
+        L.LastElement();
     }
     
 }

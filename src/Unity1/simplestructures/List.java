@@ -69,5 +69,23 @@ public class List {
         return count;
 
     }
+    
+    public void PrintFirstElement(){ //Metodo 8
+        
+        Node aux = head;
+        
+        if(head == null){
+            
+          head = aux;  
+            
+        }
+        
+    }
+    
+    public void LastElement(){ //Metodo 9
+        
+        
+        
+    }
 
 }
