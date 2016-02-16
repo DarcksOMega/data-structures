@@ -51,13 +51,22 @@ public class List {
 
     public int remove(int p) {
 
+        
         return 0;
 
     }
 
     public int count() {
 
-        return 0;
+        Node aux = head;
+        int count = 0;
+        while (aux != null){
+            
+            count ++;
+            aux = aux.Next;
+            
+        }
+        return count;
 
     }
 

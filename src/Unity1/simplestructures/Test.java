@@ -17,6 +17,8 @@ public class Test {
         System.out.println(" Initial Elements:  ");
         L.print();
         
+        int c = L.count();
+        System.out.println("Total nodes:  " + c );
     }
     
 }
