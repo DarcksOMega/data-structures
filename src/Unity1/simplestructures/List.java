@@ -49,10 +49,23 @@ public class List {
 
     }
 
-    public int remove(int p) {
+    public int remove(int i) {
 
-        
-        return 0;
+        if (head == null) {
+        }
+        if (i == 0) {
+            head = head.Next;
+        }
+        Node aux = head, p = null;
+        int Counter = 0;
+        for (; Counter < i && aux != null; Counter++) {
+            p = aux;
+            aux = aux.Next;
+        }
+        if (aux != null) {
+            p.Next = aux.Next;
+        }
+        return aux.data;
 
     }
 
@@ -60,32 +73,65 @@ public class List {
 
         Node aux = head;
         int count = 0;
-        while (aux != null){
-            
-            count ++;
+        while (aux != null) {
+
+            count++;
             aux = aux.Next;
-            
+
         }
         return count;
 
     }
-    
-    public void PrintFirstElement(){ //Metodo 8
-        
+
+    public int PrintFirstElement(int d) { //Metodo 8
+
         Node aux = head;
-        
-        if(head == null){
-            
-          head = aux;  
-            
+        if (aux == null) {
+            System.out.println(" -1 ");
         }
-        
-    }
-    
-    public void LastElement(){ //Metodo 9
-        
-        
-        
+        System.out.println(aux.data);
+        return -1;
     }
 
+    public void PrintLastElement() { //Metodo 9
+
+        Node aux = head;
+
+        if (aux != null) {
+            while (aux.Next != null) {
+                aux = aux.Next;
+            }
+            System.out.print(aux.data);
+        } else {
+            System.out.println(" -1 ");
+        }
+
+    }
+
+    public void RemoveFirstElement() {
+
+        if (head == null) {
+            return;
+        }
+        head = head.Next;
+    }
+
+    public void RemoveLastElement() {
+
+        if (head == null) {
+            return;
+        }
+        Node aux = head, p = null;
+        p = aux;
+        while (aux.Next != null) {
+            aux = aux.Next;
+        }
+        p.Next = aux.Next;
+        
+            
+    if( head.Next != null){
+    head = null;
+    }
+
+    }
 }
