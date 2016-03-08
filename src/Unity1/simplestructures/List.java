@@ -134,4 +134,50 @@ public class List {
     }
 
     }
+    
+    public void insertZeros(){
+        
+        Node aux=head;
+        int  d = count();
+        for(int i=1; i<d; i++){
+            Node n=new Node(0);
+            n.Next = aux.Next;
+            aux.Next = n;
+            aux = n.Next;
+        }
+        
+        
+        
+    }
+    
+    //EXAMAN COMIENZO
+    
+    
+    public void removeMiddle(int e){
+        
+        if (head == null){
+            return;
+        }
+
+        
+    }    
+   
+    
+    public boolean countOdds(int impNum){
+                
+        Node aux= head; 
+        int numimp = 0;
+        
+        while(aux.Next != null){
+            
+            if(aux.data % 2==1){
+                
+                numimp++;
+            }
+            
+            aux=aux.Next;
+        }
+        return numimp;  
+    }
+    //FIN
 }
