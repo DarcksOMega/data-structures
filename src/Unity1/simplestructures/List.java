@@ -132,8 +132,75 @@ public class List {
     if( head.Next != null){
     head = null;
     }
+}
+    
+    public void removeIntercaled(){
+       
+	Node aux= head,p=head;
+        int c=count();
+        for(int i=0;i<c;i++){
+            if(i%2==1){
 
+                p.Next=aux.Next;
+
+            }
+
+            p=aux;
+            aux=aux.Next;
+
+        }
     }
+    
+    public void DuplicateIntercaled(){
+
+        Node aux= head,p=head;
+        int c=count();
+        for(int i=0;i<c;i++){
+
+            Node n=new Node(aux.data);
+            n.Next=aux.Next;
+            aux.Next=n;
+            aux=n.Next;
+
+        }
+    }
+    
+    public void Invert(){
+
+        Node aux= head,head2=null;
+        while(head!=null){
+            aux=head;
+            head=head.Next;
+            aux.Next=head2.Next;
+            head2.Next=aux;
+        }
+
+        head=head2;
+    }
+    
+    public void RemoveRecurrents(){
+
+        Node p =head, aux=head, back=head;
+        while(aux.Next!=null){
+
+            p=head;
+            while(p!=aux){
+
+                if(p.data==aux.data){
+
+                    back.Next=aux.Next;
+                    back=aux;
+                }
+
+                p= p.Next;
+            }
+
+            back=aux;
+            aux=aux.Next;
+        }
+    }
+    
+    
     
     public void insertZeros(){
         
@@ -150,34 +217,39 @@ public class List {
         
     }
     
-    //EXAMAN COMIENZO
-    
     
     public void removeMiddle(int e){
         
-        if (head == null){
-            return;
-        }
+        Node aux= head , back =head;
+        int c= count();
+        int half= c/2;
+        
+         for(int i=0;i<half;i++){
+
+             back=aux;
+             aux=aux.Next;
+             
+         }
+         back.Next=aux.Next;
 
         
     }    
    
     
-    public boolean countOdds(int impNum){
-                
+    public int countOdds(){
+
         Node aux= head; 
-        int numimp = 0;
-        
-        while(aux.Next != null){
-            
-            if(aux.data % 2==1){
-                
-                numimp++;
+        int cont= 0;
+        while(aux.Next!=null){
+
+            if(aux.data%2!=0){
+                cont++;
             }
-            
+
             aux=aux.Next;
         }
-        return numimp;  
+
+        return cont;
     }
-    //FIN
+    
 }
